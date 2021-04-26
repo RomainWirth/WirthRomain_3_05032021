@@ -1,0 +1,19 @@
+{
+  "name": "wirthromain_3_05032021",
+  "version": "1.0.0",
+  "description": "\"Projet 3 formation développeur web\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainWirth/WirthRomain_3_05032021.git"
+  },
+  "author": "\"Romain WIRTH\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainWirth/WirthRomain_3_05032021/issues"
+  },
+  "homepage": "https://github.com/RomainWirth/WirthRomain_3_05032021#readme"
+}
