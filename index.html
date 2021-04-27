@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oh my food</title>
 </head>
 <body>
-    
+    <div id="bloc_page">
+        <header>
+            <div class="logo_header"></div>
+            <div id="location"></div>
+        </header>
+        <section id="presentation">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+            <div class="btn-1">
+                <a href="#">
+                    <div class="btn-1__text"><p>Explorez nos restaurants</p></div>
+                </a>
+            </div>
+        </section>
+        <section id="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="btn-2">
+                <div class="btn-2__order">1</div>
+                <a href="#">
+                    <div class="btn-2__logo"><i class='fas fa-mobile-alt'></i></div>
+                    <div class="btn-2__text">Choisissez un restaurant</div>  
+                </a>
+            </div> <!-- dupliquer les boutons en 3 exemplaires -->
+        </section>
+        <section id="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants__selection">
+                <a href="#"> <!-- dupliquer les boutons et vérifier que les noms de class soient corrects -->
+                    <div class="restaurants__selection--box">
+                        <div class="restaurants__selection--image">
+                            <img src="" alt="photo" />
+                        </div>
+                        <div class="new">
+                            Nouveau
+                        </div>
+                        <div class="restaurants__selection--text">
+                            <div>
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="logo_heart">
+                                <a href="#"><i class='far fa-heart'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="logo_footer"></div> <!-- ajouter logo -->
+            <ul>
+                <li><a href="#">Proposer un restaurant</a></li> <!-- ajouter logo + texte en gras -->
+                <li><a href="#">Devenir partenaire</a></li> <!-- ajouter logo + texte en gras -->
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
