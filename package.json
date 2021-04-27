@@ -4,7 +4,8 @@
   "description": "\"Projet 3 formation développeur web\"",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss .css/style.css --use autoprefixer -d ./css/prefixed"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "\"Romain WIRTH\"",
   "license": "ISC",
+  "browserlist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/RomainWirth/WirthRomain_3_05032021/issues"
   },
