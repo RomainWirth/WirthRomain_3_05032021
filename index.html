@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.gstatic.com" rel="stylesheet" />  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" rel="stylesheet">
     <title>Oh my food</title>
 </head>
+
 <body>
     <div id="bloc_page">
         <header>
-            <div class="logo_header"></div>
-            <div id="location"></div>
+            <div class="logo_header">
+                <img src="font-images/ohmyfood.svg" alt="Logo ohmyfood" />
+            </div>
+            <div id="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Paris, Belleville</p>               
+            </div>
         </header>
+
         <section id="presentation">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
@@ -21,6 +30,7 @@
                 </a>
             </div>
         </section>
+
         <section id="fonctionnement">
             <h2>Fonctionnement</h2>
             <div class="group-btn">
@@ -30,18 +40,31 @@
                         <div class="btn-2__logo"><i class='fas fa-mobile-alt'></i></div>
                         <div class="btn-2__text">Choisissez un restaurant</div>  
                     </a>
-                </div> <!-- dupliquer les boutons en 3 exemplaires -->
-    
-    
+                </div>
+                <div class="btn-2">
+                    <div class="btn-2__order">2</div>
+                    <a href="#">
+                        <div class="btn-2__logo"><i class="fa fa-list-ul"></i></div>
+                        <div class="btn-2__text">Composez votre menu</div>  
+                    </a>
+                </div>
+                <div class="btn-2">
+                    <div class="btn-2__order">3</div>
+                    <a href="#">
+                        <div class="btn-2__logo"><i class="fas fa-store"></i></div>
+                        <div class="btn-2__text">Dégustez au restaurant</div>  
+                    </a>
+                </div>  
             </div>
         </section>
+
         <section id="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurants__selection">
-                <a href="#"> <!-- dupliquer les boutons et vérifier que les noms de class soient corrects -->
+                <a href="#">
                     <div class="restaurants__selection--box">
                         <div class="restaurants__selection--image">
-                            <img src="" alt="photo" />
+                            <img src="font-images/francaise.jpg" alt="photo" />
                         </div>
                         <div class="new">
                             Nouveau
@@ -57,12 +80,68 @@
                         </div>
                     </div>
                 </a>
-
-                
+                <a href="#">
+                    <div class="restaurants__selection--box">
+                        <div class="restaurants__selection--image">
+                            <img src="font-images/francaise.jpg" alt="photo" />
+                        </div>
+                        <div class="new">
+                            Nouveau
+                        </div>
+                        <div class="restaurants__selection--text">
+                            <div>
+                                <h3>La note enchantée</h3>
+                                <p>Charbonne</p>
+                            </div>
+                            <div class="logo_heart">
+                                <a href="#"><i class='far fa-heart'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="restaurants__selection--box">
+                        <div class="restaurants__selection--image">
+                            <img src="font-images/francaise.jpg" alt="photo" />
+                        </div>
+                        <div class="new">
+                            Nouveau
+                        </div>
+                        <div class="restaurants__selection--text">
+                            <div>
+                                <h3>A la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="logo_heart">
+                                <a href="#"><i class='far fa-heart'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="restaurants__selection--box">
+                        <div class="restaurants__selection--image">
+                            <img src="font-images/francaise.jpg" alt="photo" />
+                        </div>
+                        <div class="new">
+                            Nouveau
+                        </div>
+                        <div class="restaurants__selection--text">
+                            <div>
+                                <h3>Le délice des sens</h3>
+                                <p>FOlie-Mérincourt</p>
+                            </div>
+                            <div class="logo_heart">
+                                <a href="#"><i class='far fa-heart'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </a>                
             </div>
         </section>
+
         <footer>
-            <div class="logo_footer"></div> <!-- ajouter logo -->
+            <h4>ohmyfood</h4>
             <ul>
                 <li><a href="#">Proposer un restaurant</a></li> <!-- ajouter logo + texte en gras -->
                 <li><a href="#">Devenir partenaire</a></li> <!-- ajouter logo + texte en gras -->
