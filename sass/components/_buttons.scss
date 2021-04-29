@@ -15,3 +15,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.group-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-2 {
+    display: flex;
+    &__order {
+        border: solid;
+        border-radius: 50%;
+        background-color: #9356dc;
+    }
+    &__content {
+        background-color: #f6f6f6;
+        border: solid;
+        display: flex;
+    }    
+}
+

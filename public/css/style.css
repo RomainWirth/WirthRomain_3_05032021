@@ -36,6 +36,11 @@ footer {
   font-weight: normal;
   font-style: normal;
 }
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .button-1 {
   display: flex;
   justify-content: center;
@@ -52,6 +57,25 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.group-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-2 {
+  display: flex;
+}
+.btn-2__order {
+  border: solid;
+  border-radius: 50%;
+  background-color: #9356dc;
+}
+.btn-2__content {
+  background-color: #f6f6f6;
+  border: solid;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
