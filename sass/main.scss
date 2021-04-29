@@ -1,24 +1,14 @@
-@import './utils/nom';
+@import './utils/_mixins.scss';
+@import './utils/_variables.scss';
 
-@import './base/nom';
-
-@import './layout/nom';
-
-@import './pages/nom';
-
-@import './components/nom';
-
-#bloc_page {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url("") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
+@import './base/_base.scss';
+@import './base/_typography.scss';
 
 
-h1, h2, h3, h4, p, div, ul, ol {margin: 0; padding: 0; margin-block-start: 0; margin-block-end: 0;}
+@import './layout/_containers.scss';
+@import './layout/_header.scss';
+
+@import './pages/_page.scss';
+
+@import './components/_buttons.scss';
+
