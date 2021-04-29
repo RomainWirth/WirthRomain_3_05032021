@@ -10,11 +10,48 @@ h1, h2, h3, h4, p, div, ul, ol {
   margin-block-end: 0;
 }
 
+header {
+  background-color: blue;
+}
+
+#presentation {
+  background-color: red;
+}
+
+#fonctionnement {
+  background-color: yellow;
+}
+
+#restaurants {
+  background-color: pink;
+}
+
+footer {
+  background-color: green;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("./font/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+.button-1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: red;
+}
+
+.btn-1 {
+  background-color: #FF79DA;
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
