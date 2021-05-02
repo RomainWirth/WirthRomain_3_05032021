@@ -1,0 +1,9 @@
+.restaurants__selection {
+    &--box {
+        width: 335px;
+    }
+    &--image img {
+        min-width: 335px;
+        max-width: 335px;
+    }
+}
