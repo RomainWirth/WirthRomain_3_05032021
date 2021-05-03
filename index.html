@@ -19,23 +19,29 @@
         </header>
 
         <section id="location">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Paris, Belleville</p>               
+            <div id="location__container">
+                <div id="location__container--marker">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p>Paris, Belleville</p>   
+            </div>
         </section>
 
         <section id="presentation">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <div class="button-1">
-                <a href="#">
-                    <div class="btn-1"><p class="btn-1__text">Explorez nos restaurants</p></div>
-                </a>
+            <div id="presentation__container">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <div class="button-1">
+                    <a href="#">
+                        <div class="btn-1"><p class="btn-1__text">Explorez nos restaurants</p></div>
+                    </a>
+                </div>  
             </div>
         </section>
 
         <section id="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <div class="group-btn">
+            <div id="fonctionnement__container">
+                <h2>Fonctionnement</h2>
                 <div class="btn-2">
                     <div class="btn-2__order">1</div>
                     <a href="#">
@@ -62,24 +68,22 @@
                             <div class="btn-2__content--text">Dégustez au restaurant</div>      
                         </div>
                     </a>
-                </div>  
+                </div>      
             </div>
         </section>
 
         <section id="restaurants">
-            <h2>Restaurants</h2>
-            <div class="restaurants__selection">
+            <div>
+                <h2>Restaurants</h2>
+                <div class="restaurants__selection">
                     <div class="restaurants__selection--box">
                         <div class="restaurants__selection--image">
                             <a href="./resto_1.html">
-                                <img src="public/img/francaise.jpg" alt="photo" />
+                                <img src="public/img/palettegout.jpg" alt="photo" />
                             </a>
                         </div>
-                        <div class="new">
-                            Nouveau
-                        </div>
                         <div class="restaurants__selection--text">
-                            <div>
+                            <div class="resto_name">
                                 <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
@@ -88,6 +92,11 @@
                             </div>
                         </div>
                     </div>
+                    <div class="new">
+                        Nouveau
+                    </div>
+    
+            </div>
                 <a href="./resto_2.html">
                     <div class="restaurants__selection--box">
                         <div class="restaurants__selection--image">
@@ -149,13 +158,15 @@
         </section>
 
         <footer>
-            <h4>ohmyfood</h4>
-            <ul>
-                <li><a href="#"><i class='fas fa-utensils'></i>&nbsp;Proposer un restaurant</a></li> <!-- ajouter logo + texte en gras -->
-                <li><a href="#"><i class="fas fa-hands-helping"></i>&nbsp;Devenir partenaire</a></li> <!-- ajouter logo + texte en gras -->
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div>
+                <h4>ohmyfood</h4>
+                <ul>
+                    <li><a href="#"><i class='fas fa-utensils'></i>&nbsp;Proposer un restaurant</a></li> <!-- ajouter logo + texte en gras -->
+                    <li><a href="#"><i class="fas fa-hands-helping"></i>&nbsp;Devenir partenaire</a></li> <!-- ajouter logo + texte en gras -->
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>  
+            </div>
         </footer>
     </div>
 </body>
