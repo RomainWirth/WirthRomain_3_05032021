@@ -161,15 +161,57 @@ header {
 }
 
 /* ***************** section "restaurants" ***************** */
-.restaurants__selection--box {
-  width: 335px;
+#restaurants {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-.restaurants__selection--image img {
-  min-width: 335px;
-  max-width: 335px;
+#restaurants__containers {
+  margin: 0 5%;
 }
-.restaurants__selection--text {
+
+.restaurants-selection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.restaurants-selection__box {
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.restaurants-selection__box--image {
+  min-width: 100%;
+  max-width: 100%;
+  height: 174px;
+}
+.restaurants-selection__box--image img {
+  width: 100%;
+}
+.restaurants-selection__box--text {
+  height: 76px;
+  padding: 15px;
   background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.new {
+  display: none;
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 1px;
+  position: relative;
+  right: 5px;
+  top: 5px;
+  z-index: 1;
+}
+
+/* ************************* FOOTER ************************* */
 
 /*# sourceMappingURL=style.css.map */
