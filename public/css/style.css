@@ -177,6 +177,7 @@ header {
 .restaurants-selection__box {
   height: 250px;
   border-radius: 10px;
+  box-shadow: 0 0 15px #CECECE;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
