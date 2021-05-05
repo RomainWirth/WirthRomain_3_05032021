@@ -101,6 +101,7 @@ header {
 .btn-1 {
   background-color: #FF79DA;
   color: #FFF;
+  box-shadow: 0 0 15px #CECECE;
   font-weight: bold;
   height: 50px;
   width: 220px;
@@ -253,8 +254,9 @@ header {
 
 .resto-content {
   background-color: #f6f6f6;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
   padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -267,7 +269,7 @@ header {
 }
 
 .menu {
-  margin: 0 3.5%;
+  margin: 0 3.5% 20px 3.5%;
 }
 
 .menu-section {
@@ -283,6 +285,7 @@ header {
   background-color: #FFF;
   height: 70px;
   border-radius: 12px;
+  box-shadow: 0 0 15px #CECECE;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-around;
