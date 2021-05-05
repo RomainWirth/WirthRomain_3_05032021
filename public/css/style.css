@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto";
   src: url("./public/font/Roboto-Regular.ttf") format("truetype");
@@ -238,6 +239,17 @@ header {
 .logo-heart {
   width: 10%;
   display: flex;
+}
+
+/* ************************* page 1 ************************* */
+.image-en-tête {
+  height: 265px;
+}
+.image-en-tête img {
+  min-width: 100%;
+  max-width: 100%;
+  height: 265px;
+  overflow: hidden;
 }
 
 /* ************************* FOOTER ************************* */
