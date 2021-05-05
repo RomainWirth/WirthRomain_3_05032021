@@ -244,7 +244,42 @@ header {
     }
 }
 
+.resto-content {
+    background-color: #f6f6f6;
+    border-radius: 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__title {
+        margin: 0 5% 15px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
+.menu {
+    margin: 0 3.5%;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & h3 {
+        margin-bottom: 15px;
+        padding-left: 2%;
+    }
+    &__plat {
+        background-color: #FFF;
+        height: 70px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
 
 /* ************************* FOOTER ************************* */
 
