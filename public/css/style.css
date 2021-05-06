@@ -16,6 +16,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+
 h1, h2, h3, h4, p, div, ul, ol {
   margin: 0;
   padding: 0;
@@ -51,11 +55,16 @@ footer {
 /* ************************* HEADER ************************* */
 header {
   height: 60px;
+  padding: 0 5%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   box-shadow: 0 0 15px #CECECE;
+}
+
+.navigation-vide {
+  width: 14px;
 }
 
 /* ******************* section "location" ******************* */
@@ -66,29 +75,29 @@ header {
   align-items: center;
   background-color: #eaeaea;
 }
-#location__container {
+#location__containers {
   height: 40px;
   width: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#location__container--marker {
+#location__containers--marker {
   height: 40px;
   width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#location__container--search-area {
+#location__containers--search-area {
   font-weight: bold;
 }
-#location__container--vide {
+#location__containers--vide {
   width: 40px;
 }
 
 /* ***************** section "presentation" ***************** */
-#presentation__container {
+#presentation__containers {
   padding: 40px 0;
   margin: 0 5%;
   height: 200px;
@@ -99,7 +108,7 @@ header {
 }
 
 .btn-1 {
-  background-color: #FF79DA;
+  background: linear-gradient(to bottom right, #FF79DA, #9d59dc);
   color: #FFF;
   box-shadow: 0 0 15px #CECECE;
   font-weight: bold;
@@ -107,9 +116,13 @@ header {
   width: 220px;
   border-radius: 25px;
   margin: auto;
+  padding: 0 1.5%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn-1:hover {
+  box-shadow: 0 0 15px #353535;
 }
 
 /* ***************** section "fonctionnement" ***************** */
@@ -163,9 +176,15 @@ header {
   display: flex;
   justify-content: center;
 }
+.btn-2__content--logo:hover {
+  color: #9356dc;
+}
 .btn-2__content--text {
   width: 78%;
   font-weight: bold;
+}
+.btn-2__content:hover {
+  background-color: #f5edff;
 }
 
 /* ***************** section "restaurants" ***************** */
@@ -226,6 +245,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+.restaurants-selection__box:hover {
+  box-shadow: 0 0 15px #353535;
+}
 
 .resto-name {
   width: 90%;
@@ -244,7 +266,7 @@ header {
   display: flex;
 }
 .logo-heart i {
-  height: 20px;
+  font-weight: lighter;
 }
 
 /* ************************* page 1 ************************* */
@@ -359,20 +381,23 @@ header {
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 .footer-container h2 {
-  font-family: "Shrikhand", sans-serif;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 .footer-container__list {
   font-size: 16px;
+  line-height: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .footer-container__list a {
   color: #FFF;
+}
+.footer-container__list a:hover {
+  font-weight: bold;
 }
 .footer-container__list--liens i {
   width: 20px;
