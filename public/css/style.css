@@ -279,14 +279,17 @@ header {
   height: 265px;
   overflow: hidden;
 }
+.image-en-tete__separateur {
+  background-color: #f6f6f6;
+  height: 45px;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  bottom: 45px;
+}
 
 .resto-content {
   background-color: #f6f6f6;
-  border-radius: 40px 40px 0 0;
-  padding-top: 40px;
   padding-bottom: 40px;
-  position: relative;
-  bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -339,7 +342,7 @@ header {
   height: 70px;
   border-radius: 12px;
   box-shadow: 0 0 15px #cecece;
-  padding: 0 10px;
+  padding-left: 3%;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
@@ -359,10 +362,11 @@ header {
   font-size: 15px;
   white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-section__plats--prix {
   height: 70px;
-  width: 60px;
+  width: 15%;
   margin-right: 3.5%;
   border-radius: 0 12px 12px 0;
   background-color: #fff;
@@ -381,7 +385,7 @@ header {
 }
 .menu-section__plats--check {
   height: 70px;
-  width: 60px;
+  width: 15%;
   margin-right: 3.5%;
   border-radius: 0 12px 12px 0;
   background-color: #99e2d0;
