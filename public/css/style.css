@@ -60,7 +60,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  box-shadow: 0 0 15px #CECECE;
+  box-shadow: 0 0 15px #cecece;
 }
 
 .navigation-vide {
@@ -108,9 +108,9 @@ header {
 }
 
 .btn-1 {
-  background: linear-gradient(to bottom right, #FF79DA, #9d59dc);
-  color: #FFF;
-  box-shadow: 0 0 15px #CECECE;
+  background: linear-gradient(to bottom right, #ff79da, #9d59dc);
+  color: #fff;
+  box-shadow: 0 0 15px #cecece;
   font-weight: bold;
   height: 50px;
   width: 220px;
@@ -153,7 +153,7 @@ header {
   height: 24px;
   border-radius: 50%;
   background-color: #9356dc;
-  color: #FFF;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +165,7 @@ header {
   height: 75px;
   width: 85%;
   border-radius: 15px;
-  box-shadow: 0 0 15px #CECECE;
+  box-shadow: 0 0 15px #cecece;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -184,7 +184,7 @@ header {
   font-weight: bold;
 }
 .btn-2__content:hover {
-  background-color: #f5edff;
+  background-color: #f5e6ff;
 }
 
 /* ***************** section "restaurants" ***************** */
@@ -209,7 +209,7 @@ header {
 .restaurants-selection__box {
   height: 250px;
   border-radius: 10px;
-  box-shadow: 0 0 15px #CECECE;
+  box-shadow: 0 0 15px #cecece;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -226,7 +226,7 @@ header {
 }
 .restaurants-selection__box--text {
   height: 76px;
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   align-items: center;
 }
@@ -335,10 +335,10 @@ header {
   margin-bottom: 14px;
 }
 .menu-section__plats {
-  background-color: #FFF;
+  background-color: #fff;
   height: 70px;
   border-radius: 12px;
-  box-shadow: 0 0 15px #CECECE;
+  box-shadow: 0 0 15px #cecece;
   padding: 0 10px;
   margin-bottom: 15px;
   display: flex;
@@ -365,7 +365,7 @@ header {
   width: 60px;
   margin-right: 3.5%;
   border-radius: 0 12px 12px 0;
-  background-color: #FFF;
+  background-color: #fff;
   position: absolute;
   right: 0px;
   z-index: 2;
@@ -385,7 +385,7 @@ header {
   margin-right: 3.5%;
   border-radius: 0 12px 12px 0;
   background-color: #99e2d0;
-  color: #FFF;
+  color: #fff;
   position: absolute;
   right: 0px;
   z-index: 1;
@@ -396,7 +396,7 @@ header {
 
 /* ************************* FOOTER ************************* */
 .footer-container {
-  color: #FFF;
+  color: #fff;
   margin: 0 5%;
   padding: 20px 0;
   height: 200px;
@@ -415,7 +415,7 @@ header {
   justify-content: space-around;
 }
 .footer-container__list a {
-  color: #FFF;
+  color: #fff;
 }
 .footer-container__list a:hover {
   font-weight: bold;
