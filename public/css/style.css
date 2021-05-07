@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Roboto";
-  src: url("./public/font/Roboto-Regular.ttf") format("truetype");
+  src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("./public/font/Shrikhand-Regular.ttf") format("truetype");
+  src: url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
