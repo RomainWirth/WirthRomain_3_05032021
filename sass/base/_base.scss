@@ -26,15 +26,29 @@ h1, h2, h3, h4, p, div, ul, ol {margin: 0; padding: 0; margin-block-start: 0; ma
 
 a {text-decoration-line: none; color: #000;}
 
-header {background-color: #fff;}
+$color-base: #fff;
+$color-footer: #353535;
+$color-fond-location: #eaeaea;
+$color-background-gris: #f6f6f6;
+$color-logos-gris: #7e7e7e;
+$color-shadow: #cecece;
+$color-violet-Secondaire: #ff79da;
+$color-violet-2: #9d59dc;
+$color-violet-Primaire: #9356dc;
+$color-violet-hover: #f5e6ff;
+$color-vert-tertiaire: #99e2d0;
+$color-vert-text: #008766;
 
-#presentation {background-color: #f6f6f6;}
 
-#fonctionnement {background-color: #fff;}
+header {background-color: $color-base;}
 
-#restaurants {background-color: #f6f6f6;}
+#presentation {background-color: $color-background-gris;}
 
-footer {background-color: #353535;}
+#fonctionnement {background-color: $color-base;}
+
+#restaurants {background-color: $color-background-gris;}
+
+footer {background-color: $color-footer;}
 
 
 
@@ -47,7 +61,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    box-shadow: 0 0 15px #CECECE;
+    box-shadow: 0 0 15px $color-shadow;
 }
 
 .navigation-vide {
@@ -61,7 +75,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eaeaea;
+    background-color: $color-fond-location;
     &__containers {
         height: 40px;
         width: 230px;
@@ -99,9 +113,9 @@ header {
 }
 
 .btn-1 {
-    background: linear-gradient(to bottom right, #FF79DA, #9d59dc) ;
-    color: #FFF;
-    box-shadow: 0 0 15px #CECECE;
+    background: linear-gradient(to bottom right, $color-violet-Secondaire, $color-violet-2) ;
+    color: $color-base;
+    box-shadow: 0 0 15px $color-shadow;
     font-weight: bold;
     height: 50px;
     width: 220px;
@@ -112,7 +126,7 @@ header {
     justify-content: center;
     align-items: center;
     &:hover {
-        box-shadow: 0 0 15px #353535;
+        box-shadow: 0 0 15px $color-footer;
     }
 }
 
@@ -143,8 +157,8 @@ header {
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        background-color: #9356dc;
-        color: #FFF;
+        background-color: $color-violet-Primaire;
+        color: $color-base;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -152,21 +166,21 @@ header {
         left: 12px;
     }
     &__content {
-        background-color: #f6f6f6;
+        background-color: $color-background-gris;
         height: 75px;
         width: 85%;
         border-radius: 15px;
-        box-shadow: 0 0 15px #CECECE; 
+        box-shadow: 0 0 15px $color-shadow; 
         display: flex;
         justify-content: space-around;
         align-items: center;
         &--logo {
             width: 22%;
-            color: #7e7e7e;
+            color: $color-logos-gris;
             display: flex;
             justify-content: center;
             &:hover {
-                color: #9356dc;
+                color: $color-violet-Primaire;
             }
         }
         &--text {
@@ -174,7 +188,7 @@ header {
             font-weight: bold;
         }
         &:hover {
-            background-color: #f5edff;
+            background-color: $color-violet-hover;
         }
     }    
 }
@@ -201,7 +215,7 @@ header {
     &__box {
         height: 250px;
         border-radius: 10px;
-        box-shadow: 0 0 15px #CECECE;
+        box-shadow: 0 0 15px $color-shadow;
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -217,15 +231,15 @@ header {
         }
         &--text {
             height: 76px;
-            background-color: #FFF;
+            background-color: $color-base;
             display: flex;
             align-items: center;
         }
         &--new {
             width: 80px;
             height: 30px;
-            background-color: #99e2d0;
-            color: #008766;
+            background-color: $color-vert-tertiaire;
+            color: $color-vert-text;
             font-weight: bold;
             border-radius: 2px;
             position: absolute;
@@ -237,7 +251,7 @@ header {
             align-items: center;
         }
         &:hover {
-            box-shadow: 0 0 15px #353535;
+            box-shadow: 0 0 15px $color-footer;
         }
     }
 }
@@ -275,7 +289,7 @@ header {
 }
 
 .resto-content {
-    background-color: #f6f6f6;
+    background-color: $color-background-gris;
     border-radius: 40px 40px 0 0;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -323,15 +337,15 @@ header {
     &__separateur {
         width: 40px;
         height: 3px;
-        background-color: #99e2d0;
+        background-color: $color-vert-tertiaire;
         margin-left: 6px;
         margin-bottom: 14px; 
     }
     &__plats {
-        background-color: #FFF;
+        background-color: $color-base;
         height: 70px;
         border-radius: 12px;
-        box-shadow: 0 0 15px #CECECE;
+        box-shadow: 0 0 15px $color-shadow;
         padding: 0 10px;
         margin-bottom: 15px;
         display: flex;
@@ -357,7 +371,7 @@ header {
             width: 60px;
             margin-right: 3.5%;
             border-radius: 0 12px 12px 0;
-            background-color: #FFF;
+            background-color: $color-base;
             position: absolute;
             right: 0px;
             z-index: 2;
@@ -376,8 +390,8 @@ header {
             width: 60px;
             margin-right: 3.5%;
             border-radius: 0 12px 12px 0;
-            background-color: #99e2d0;
-            color: #FFF;
+            background-color: $color-vert-tertiaire;
+            color: $color-base;
             position: absolute;
             right: 0px;
             z-index: 1;
@@ -391,7 +405,7 @@ header {
 /* ************************* FOOTER ************************* */
 
 .footer-container {
-    color: #FFF;
+    color: $color-base;
     margin: 0 5%;
     padding: 20px 0;
     height: 200px;
@@ -408,7 +422,7 @@ header {
         flex-direction: column;
         justify-content: space-around;
         & a {
-            color: #FFF;
+            color: $color-base;
             &:hover {
                 font-weight: bold;
             }
