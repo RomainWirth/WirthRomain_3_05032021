@@ -307,7 +307,7 @@ header {
   display: flex;
 }
 .logo-heart a {
-  background-color: linear-gradient(to bottom top, #ff79da, #9d59dc);
+  text-decoration-color: linear-gradient(to top bottom, #9d59dc, #ff79da);
 }
 .logo-heart__btn {
   font-weight: lighter;
@@ -315,6 +315,12 @@ header {
   z-index: 1;
 }
 .logo-heart__btn:hover .logo-heart__btn--bkgd {
+  opacity: 1;
+}
+.logo-heart__btn:active .logo-heart__btn--bkgd {
+  opacity: 1;
+}
+.logo-heart__btn:visited .logo-heart__btn--bkgd {
   opacity: 1;
 }
 .logo-heart__btn--bkgd {
@@ -328,7 +334,7 @@ header {
   transition: opacity 500ms;
 }
 .logo-heart__btn--bkgd i {
-  color: linear-gradient(to bottom top, #ff79da, #9d59dc);
+  text-decoration-color: linear-gradient(to top bottom, #9d59dc, #ff79da);
 }
 
 /* ************************* page 1 ************************* */

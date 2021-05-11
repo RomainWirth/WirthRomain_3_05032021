@@ -315,7 +315,7 @@ header {
     width: 10%;
     display: flex;
     & a {
-        background-color: linear-gradient(to bottom top, $color-violet-Secondaire, $color-violet-2);
+        text-decoration-color: linear-gradient(to top bottom, $color-violet-2, $color-violet-Secondaire);
     }
     &__btn {
         font-weight: lighter;
@@ -326,9 +326,19 @@ header {
                 opacity: 1;
             }
         }
+        &:active {
+            & .logo-heart__btn--bkgd {
+                opacity: 1;
+            }
+        }
+        &:visited {
+            & .logo-heart__btn--bkgd {
+                opacity: 1;
+            }
+        }
         &--bkgd {
             & i {
-                color: linear-gradient(to bottom top, $color-violet-Secondaire, $color-violet-2);
+                text-decoration-color: linear-gradient(to top bottom, $color-violet-2, $color-violet-Secondaire);
             }
             position: absolute;
             left: 0;
