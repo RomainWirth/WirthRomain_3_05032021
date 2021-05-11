@@ -211,9 +211,6 @@ header {
             color: $color-logos-gris;
             display: flex;
             justify-content: center;
-            &:hover {
-                color: $color-violet-Primaire;
-            }
         }
         &--text {
             width: 78%;
@@ -221,6 +218,9 @@ header {
         }
         &:hover {
             background-color: $color-violet-hover;
+            .btn-2__content--logo {
+                color: $color-violet-Primaire;
+            }
         }
     }    
 }
@@ -314,15 +314,31 @@ header {
 .logo-heart {
     width: 10%;
     display: flex;
-    &__empty {
+    & a {
+        background-color: linear-gradient(to bottom top, $color-violet-Secondaire, $color-violet-2);
+    }
+    &__btn {
         font-weight: lighter;
         position: relative;
-        z-index: 2;
-    }
-    &__full {
-        color: linear-gradient(to bottom top, $color-violet-Secondaire, $color-violet-2) ;
-        position: relative;
         z-index: 1;
+        &:hover {
+            & .logo-heart__btn--bkgd {
+                opacity: 1;
+            }
+        }
+        &--bkgd {
+            & i {
+                color: linear-gradient(to bottom top, $color-violet-Secondaire, $color-violet-2);
+            }
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 500ms;
+        }
     }
 }
 

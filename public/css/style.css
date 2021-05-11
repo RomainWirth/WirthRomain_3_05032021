@@ -206,15 +206,15 @@ header {
   display: flex;
   justify-content: center;
 }
-.btn-2__content--logo:hover {
-  color: #9356dc;
-}
 .btn-2__content--text {
   width: 78%;
   font-weight: bold;
 }
 .btn-2__content:hover {
   background-color: #f5e6ff;
+}
+.btn-2__content:hover .btn-2__content--logo {
+  color: #9356dc;
 }
 
 /* ***************** section "restaurants" ***************** */
@@ -306,15 +306,29 @@ header {
   width: 10%;
   display: flex;
 }
-.logo-heart__empty {
+.logo-heart a {
+  background-color: linear-gradient(to bottom top, #ff79da, #9d59dc);
+}
+.logo-heart__btn {
   font-weight: lighter;
   position: relative;
-  z-index: 2;
-}
-.logo-heart__full {
-  color: linear-gradient(to bottom top, #ff79da, #9d59dc);
-  position: relative;
   z-index: 1;
+}
+.logo-heart__btn:hover .logo-heart__btn--bkgd {
+  opacity: 1;
+}
+.logo-heart__btn--bkgd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 500ms;
+}
+.logo-heart__btn--bkgd i {
+  color: linear-gradient(to bottom top, #ff79da, #9d59dc);
 }
 
 /* ************************* page 1 ************************* */
