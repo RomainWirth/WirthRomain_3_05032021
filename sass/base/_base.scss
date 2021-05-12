@@ -86,6 +86,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        & h2 {display: none;}
         &--marker {
             height: 40px;
             width: 40px;
@@ -292,7 +293,7 @@ header {
     }
 }
 
-#restaurants-selection__box-sup {
+.rest-selec_box-sup {
     @include media-queries-max(1024px) {
         display: none;
     }
@@ -325,24 +326,7 @@ header {
                 opacity: 1;
             }
         }
-        &:active {
-            & i{
-                color: $color-violet-2;
-            }
-            & .logo-heart__btn--bkgd {
-                opacity: 1;
-            }
-        }
-        &:visited {
-            & i{
-                color: $color-violet-2;
-            }
-            & .logo-heart__btn--bkgd {
-                opacity: 1;
-            }
-        }
         &--bkgd {
-            color: $color-violet-2;
             position: absolute;
             left: 0;
             top: 0;
@@ -359,6 +343,7 @@ header {
 
 .en-tete {
     height: 265px;
+    & h2 {display: none;}
     &__image {
         display: flex;
         justify-content: space-around;
@@ -457,7 +442,7 @@ header {
     flex-direction: row;
     align-items: center;
     animation-name: load-page;
-    animation-duration: 3000ms;
+    animation-duration: 1000ms;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: backwards;

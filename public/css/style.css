@@ -83,6 +83,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+#location__containers h2 {
+  display: none;
+}
 #location__containers--marker {
   height: 40px;
   width: 40px;
@@ -285,7 +288,7 @@ header {
 }
 
 @media (max-width: 1024px) {
-  #restaurants-selection__box-sup {
+  .rest-selec_box-sup {
     display: none;
   }
 }
@@ -317,20 +320,7 @@ header {
 .logo-heart__btn:hover .logo-heart__btn--bkgd {
   opacity: 1;
 }
-.logo-heart__btn:active i {
-  color: #9d59dc;
-}
-.logo-heart__btn:active .logo-heart__btn--bkgd {
-  opacity: 1;
-}
-.logo-heart__btn:visited i {
-  color: #9d59dc;
-}
-.logo-heart__btn:visited .logo-heart__btn--bkgd {
-  opacity: 1;
-}
 .logo-heart__btn--bkgd {
-  color: #9d59dc;
   position: absolute;
   left: 0;
   top: 0;
@@ -344,6 +334,9 @@ header {
 /* ************************* page 1 ************************* */
 .en-tete {
   height: 265px;
+}
+.en-tete h2 {
+  display: none;
 }
 .en-tete__image {
   display: flex;
@@ -446,7 +439,7 @@ header {
   flex-direction: row;
   align-items: center;
   animation-name: load-page;
-  animation-duration: 3000ms;
+  animation-duration: 1000ms;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
