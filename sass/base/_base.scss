@@ -39,7 +39,6 @@ $color-violet-hover: #f5e6ff;
 $color-vert-tertiaire: #99e2d0;
 $color-vert-text: #008766;
 
-
 header {background-color: $color-base;}
 
 #presentation {background-color: $color-background-gris;}
@@ -314,32 +313,36 @@ header {
 .logo-heart {
     width: 10%;
     display: flex;
-    & a {
-        text-decoration-color: linear-gradient(to top bottom, $color-violet-2, $color-violet-Secondaire);
-    }
     &__btn {
         font-weight: lighter;
         position: relative;
         z-index: 1;
         &:hover {
+            & i{
+                color: $color-violet-2;
+            }
             & .logo-heart__btn--bkgd {
                 opacity: 1;
             }
         }
         &:active {
+            & i{
+                color: $color-violet-2;
+            }
             & .logo-heart__btn--bkgd {
                 opacity: 1;
             }
         }
         &:visited {
+            & i{
+                color: $color-violet-2;
+            }
             & .logo-heart__btn--bkgd {
                 opacity: 1;
             }
         }
         &--bkgd {
-            & i {
-                text-decoration-color: linear-gradient(to top bottom, $color-violet-2, $color-violet-Secondaire);
-            }
+            color: $color-violet-2;
             position: absolute;
             left: 0;
             top: 0;

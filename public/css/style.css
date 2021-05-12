@@ -306,24 +306,31 @@ header {
   width: 10%;
   display: flex;
 }
-.logo-heart a {
-  text-decoration-color: linear-gradient(to top bottom, #9d59dc, #ff79da);
-}
 .logo-heart__btn {
   font-weight: lighter;
   position: relative;
   z-index: 1;
 }
+.logo-heart__btn:hover i {
+  color: #9d59dc;
+}
 .logo-heart__btn:hover .logo-heart__btn--bkgd {
   opacity: 1;
 }
+.logo-heart__btn:active i {
+  color: #9d59dc;
+}
 .logo-heart__btn:active .logo-heart__btn--bkgd {
   opacity: 1;
+}
+.logo-heart__btn:visited i {
+  color: #9d59dc;
 }
 .logo-heart__btn:visited .logo-heart__btn--bkgd {
   opacity: 1;
 }
 .logo-heart__btn--bkgd {
+  color: #9d59dc;
   position: absolute;
   left: 0;
   top: 0;
@@ -332,9 +339,6 @@ header {
   opacity: 0;
   z-index: -1;
   transition: opacity 500ms;
-}
-.logo-heart__btn--bkgd i {
-  text-decoration-color: linear-gradient(to top bottom, #9d59dc, #ff79da);
 }
 
 /* ************************* page 1 ************************* */
