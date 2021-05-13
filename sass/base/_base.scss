@@ -12,15 +12,88 @@
     font-style: normal;
 }
 
-#loading_page {
-    z-index: 3;
-    max-width: 1440px;
-    margin: 0 auto;
+$color-base: #fff;
+$color-footer: #353535;
+$color-fond-location: #eaeaea;
+$color-background-gris: #f6f6f6;
+$color-logos-gris: #7e7e7e;
+$color-shadow: #cecece;
+$color-violet-Secondaire: #ff79da;
+$color-violet-2: #9d59dc;
+$color-violet-Primaire: #9356dc;
+$color-violet-hover: #f5e6ff;
+$color-vert-tertiaire: #99e2d0;
+$color-vert-text: #008766;
 
+$loader-delay: 375ms;
+
+.loading_page {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 10000px;;
+    margin: 0 auto;
+    background-color: $color-footer;
+    animation-name: fondu;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    &__loader {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--lettre {
+            color: $color-violet-Secondaire;
+            animation: loading 3000ms linear;
+            &:nth-child(2){animation-delay: $loader-delay;}
+            &:nth-child(3){animation-delay: $loader-delay*2;}
+            &:nth-child(4){animation-delay: $loader-delay*3;}
+            &:nth-child(5){animation-delay: $loader-delay*4;}
+            &:nth-child(6){animation-delay: $loader-delay*5;}
+            &:nth-child(7){animation-delay: $loader-delay*6;}
+            &:nth-child(8){animation-delay: $loader-delay*7;}
+            & h2 {font-size: 50px;}
+        }
+    }
+}
+
+@keyframes fondu {
+    0% {opacity: 1;}
+    80% {opacity: 1;}
+    85% {opacity: 0.25;}
+    90% {opacity: 0.2;}
+    95% {
+        opacity: 0.1;
+        transform: scaleY(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+}
+
+@keyframes loading {
+    0% {
+        color: $color-violet-Primaire;
+        text-shadow: 0 0 7px $color-violet-Primaire;
+        opacity: 1;
+    }
+    90% {
+        color: $color-violet-Secondaire;
+        text-shadow: none;
+    }
+    100% {
+        color: $color-violet-Primaire;
+        text-shadow: 0 0 7px $color-violet-Primaire;
+        opacity: 0;
+    }
 }
 
 #bloc_page {
-    z-index: 2;
+    position: relative;
+    z-index: 1;
     max-width: 1440px;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
@@ -34,18 +107,7 @@ h1, h2, h3, h4, p, div, ul, ol {margin: 0; padding: 0; margin-block-start: 0; ma
 
 a {text-decoration-line: none; color: #000;}
 
-$color-base: #fff;
-$color-footer: #353535;
-$color-fond-location: #eaeaea;
-$color-background-gris: #f6f6f6;
-$color-logos-gris: #7e7e7e;
-$color-shadow: #cecece;
-$color-violet-Secondaire: #ff79da;
-$color-violet-2: #9d59dc;
-$color-violet-Primaire: #9356dc;
-$color-violet-hover: #f5e6ff;
-$color-vert-tertiaire: #99e2d0;
-$color-vert-text: #008766;
+
 
 header {background-color: $color-base;}
 
