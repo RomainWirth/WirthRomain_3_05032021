@@ -503,11 +503,10 @@ header {
     background-color: $color-base;
     height: 70px;
     width: 100%;
+    overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 0 15px $color-shadow;
     margin-bottom: 15px;
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -519,34 +518,17 @@ header {
     &:nth-child(1){animation-delay: 0ms;}
     &:nth-child(2){animation-delay: 250ms;}
     &:nth-child(3){animation-delay: 500ms;}
-    &__back {
-        width: 100%;
-        position: relative;
-        left: 0px;
-        z-index: 2;
-        display: flex;
-        &--vide {
-            height: 70px;
-            width: 80%;
-        }
-        &--check {
-            height: 70px;
-            width: 20%;
-            border-radius: 0 12px 12px 0;
-            background-color: $color-vert-tertiaire;
-            color: $color-base;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }    
+    &:hover > &__check {
+        animation: checkbox 500ms linear forwards;
     }
-    &__front {
-        position: relative;
-        z-index: 3;
-        left: 0px;
+    &:hover > &__check i {
+        animation: roll 500ms ease-in-out forwards;        
+    }
+    &__box {
+        width: 100%;
         display: flex;
         &--text {
-            height: 50px;
+            height: 70px;
             width: 80%;
             display: flex;
             flex-direction: column;
@@ -569,8 +551,6 @@ header {
         &--prix {
             height: 70px;
             width: 20%;
-            margin-right: 3.5%;
-            border-radius: 0 12px 12px 0;
             background-color: $color-base;
             display: flex;
             flex-direction: column;
@@ -581,10 +561,40 @@ header {
                 font-weight: bold;
                 text-align: end;
             }
-        }
+        } 
+    }
+    &__check {
+        height: 70px;
+        width: 0%;
+        border-radius: 0 12px 12px 0;
+        background-color: $color-vert-tertiaire;
+        color: $color-base;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+@keyframes checkbox {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 20%;
     }
 }
 
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* ************************* FOOTER ************************* */
 
