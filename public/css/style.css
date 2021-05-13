@@ -524,6 +524,8 @@ header {
   border-radius: 12px;
   box-shadow: 0 0 15px #cecece;
   margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -542,32 +544,57 @@ header {
 .menus-content:nth-child(3) {
   animation-delay: 500ms;
 }
-.menus-content a {
-  display: block;
+.menus-content__back {
+  width: 100%;
+  position: relative;
+  left: 0px;
+  z-index: 2;
+  display: flex;
 }
-.menus-content__text {
+.menus-content__back--vide {
+  height: 70px;
+  width: 80%;
+}
+.menus-content__back--check {
+  height: 70px;
+  width: 20%;
+  border-radius: 0 12px 12px 0;
+  background-color: #99e2d0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus-content__front {
+  position: relative;
+  z-index: 3;
+  left: 0px;
+  display: flex;
+}
+.menus-content__front--text {
   height: 50px;
   width: 80%;
-  padding-left: 3%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.menus-content__text h4 {
+.menus-content__front--text h4 {
+  padding-left: 3%;
   font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menus-content__text p {
+.menus-content__front--text p {
+  padding-left: 3%;
   font-size: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menus-content__prix {
+.menus-content__front--prix {
   height: 70px;
-  width: 15%;
+  width: 20%;
   margin-right: 3.5%;
   border-radius: 0 12px 12px 0;
   background-color: #fff;
@@ -576,20 +603,10 @@ header {
   justify-content: flex-end;
   align-items: center;
 }
-.menus-content__prix p {
+.menus-content__front--prix p {
   margin-bottom: 15px;
   font-weight: bold;
   text-align: end;
-}
-.menus-content__check {
-  height: 70px;
-  width: 15%;
-  border-radius: 0 12px 12px 0;
-  background-color: #99e2d0;
-  color: #fff;
-  display: none;
-  justify-content: center;
-  align-items: center;
 }
 
 /* ************************* FOOTER ************************* */
