@@ -518,6 +518,7 @@ header {
 }
 
 .menus-content {
+  cursor: pointer;
   background-color: #fff;
   height: 70px;
   width: 100%;
@@ -544,10 +545,13 @@ header {
   animation-delay: 500ms;
 }
 .menus-content:hover > .menus-content__check {
-  animation: checkbox 500ms linear forwards;
+  animation: checkbox 500ms linear both;
 }
 .menus-content:hover > .menus-content__check i {
-  animation: roll 500ms ease-in-out forwards;
+  animation: roll 500ms ease-in forwards;
+}
+.menus-content:hover > .menus-content__box {
+  animation: largeur 500ms ease-in both;
 }
 .menus-content__box {
   width: 100%;
@@ -560,7 +564,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
 }
-.menus-content__box--text h4 {
+.menus-content__box--text h4, .menus-content__box--text p {
   padding-left: 3%;
   font-size: 16px;
   white-space: nowrap;
@@ -568,11 +572,7 @@ header {
   text-overflow: ellipsis;
 }
 .menus-content__box--text p {
-  padding-left: 3%;
   font-size: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menus-content__box--prix {
   height: 70px;
@@ -599,6 +599,14 @@ header {
   align-items: center;
 }
 
+@keyframes largeur {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 80%;
+  }
+}
 @keyframes checkbox {
   0% {
     width: 0;
