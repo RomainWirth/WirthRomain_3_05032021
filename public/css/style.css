@@ -452,11 +452,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  animation-name: load-page;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-in-out;
+  animation: load-page 1000ms ease-in-out backwards;
   animation-iteration-count: 1;
-  animation-fill-mode: backwards;
 }
 .menus-content:nth-child(1) {
   animation-delay: 0ms;
