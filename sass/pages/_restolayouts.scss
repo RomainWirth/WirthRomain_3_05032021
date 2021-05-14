@@ -6,9 +6,7 @@
         justify-content: space-around;
         &--vide {
             width: 20%;
-            @include media-queries-max($width-smartphone) {
-                display: none;
-            }            
+            @include media-queries-max($width-smartphone) {display: none;}            
         }
         &--image img {
             min-width: 100%;
@@ -79,13 +77,9 @@
             align-items: center;
 
         }
-        @include media-queries-max($width-medium) {
-            width: 100%;
-        }
+        @include media-queries-max($width-medium) {width: 100%;}
     }
-    @include media-queries-max($width-medium) {
-        flex-direction: column;
-    }
+    @include media-queries-max($width-medium) {flex-direction: column;}
 }
 
 .menus-content {
@@ -107,15 +101,9 @@
     &:nth-child(3){animation-delay: 500ms;}
     &:nth-child(4){animation-delay: 750ms;}
     &:hover { 
-        & > .menus-content__check {
-        animation: checkbox 500ms ease-in forwards;
-        }
-        & > .menus-content__check i {
-        animation: roll 500ms ease-in forwards;        
-        }
-        & > .menus-content__box {
-        animation: largeur 500ms ease-in both;
-        }
+        & > .menus-content__check {animation: checkbox 500ms ease-in forwards;}
+        & > .menus-content__check i {animation: roll 500ms ease-in forwards;        }
+        & > .menus-content__box {animation: largeur 500ms ease-in both;}
     }
     &__box {
         width: 100%;

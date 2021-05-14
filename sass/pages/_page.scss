@@ -38,29 +38,14 @@
     80% {opacity: 0.95;}
     85% {opacity: 0.25;}
     90% {opacity: 0.2;}
-    95% {
-        opacity: 0.1;
-        transform: scaleY(1);
-    }
-    100% {
-        opacity: 0;
-        transform: scaleY(0);
-    }
+    95% {opacity: 0.1; transform: scaleY(1);}
+    100% {opacity: 0; transform: scaleY(0);}
 }
 
 @keyframes loading {
-    0% {
-        color: $color-footer;
-        text-shadow: 0 0 7px $color-footer;
-    }
-    10% {
-        color: $color-violet-Primaire;
-        text-shadow: 0 0 7px $color-footer;
-    }
-    100% {
-        color: $color-Secondaire;
-        text-shadow: 0 0 7px $color-Secondaire;
-    }
+    0% {color: $color-footer; text-shadow: 0 0 7px $color-footer;}
+    10% {color: $color-violet-Primaire; text-shadow: 0 0 7px $color-footer;}
+    100% {color: $color-Secondaire; text-shadow: 0 0 7px $color-Secondaire;}
 }
 
 /* ******************* section "location" ******************* */
@@ -85,12 +70,8 @@
             justify-content: center;
             align-items: center;
         }
-        &--search-area {
-            font-weight: bold;
-        }
-        &--vide {
-            width: 40px;
-        }
+        &--search-area {font-weight: bold;}
+        &--vide {width: 40px;}
     }
 }
 
@@ -116,9 +97,7 @@
         margin: 0 5%;
         display: flex;
         flex-direction: column;
-        & h3 {
-            margin-bottom: 30px;
-        }
+        & h3 {margin-bottom: 30px;}
         &--buttons {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -172,9 +151,7 @@
             max-width: 100%;
             height: 174px;
         }
-        &--image img {
-            width: 100%;
-        }
+        &--image img {width: 100%;}
         &--text {
             height: 76px;
             background-color: $color-base;
@@ -196,17 +173,12 @@
             justify-content: center;
             align-items: center;
         }
-        &:hover {
-            box-shadow: 0 0 15px $color-footer;
-            opacity: 0.8;
-        }
+        &:hover {box-shadow: 0 0 15px $color-footer; opacity: 0.8;}
     }
 }
 
 .rest-selec_box-sup {
-    @include media-queries-max($width-medium) {
-        display: none;
-    }
+    @include media-queries-max($width-medium) {display: none;}
 }
 
 .resto-name {
