@@ -1,5 +1,5 @@
 .btn-1 {
-    background: linear-gradient(to bottom right, $color-Secondaire, $color-violet-2) ;
+    background: linear-gradient(to bottom right, $color-Secondaire, $color-intermediaire) ;
     color: $color-base;
     box-shadow: 0 0 15px $color-shadow;
     font-weight: bold;
@@ -47,7 +47,7 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        background-color: $color-violet-Primaire;
+        background-color: $color-Primaire;
         color: $color-base;
         display: flex;
         justify-content: center;
@@ -75,9 +75,9 @@
             font-weight: bold;
         }
         &:hover {
-            background-color: $color-violet-hover;
+            background-color: $color-hover;
             .btn-2__content--logo {
-                color: $color-violet-Primaire;
+                color: $color-Primaire;
             }
         }
     }    
@@ -92,7 +92,7 @@
         z-index: 1;
         &:hover {
             & .fa-heart {
-                color: $color-violet-Primaire;
+                color: $color-Primaire;
             }
             & .logo-heart__btn--bkgd {
                 opacity: 1;
