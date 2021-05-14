@@ -1,4 +1,115 @@
+.btn-1 {
+    background: linear-gradient(to bottom right, $color-Secondaire, $color-violet-2) ;
+    color: $color-base;
+    box-shadow: 0 0 15px $color-shadow;
+    font-weight: bold;
+    height: 50px;
+    width: 220px;
+    border-radius: 25px;
+    margin: auto;
+    padding: 0 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        box-shadow: 0 0 15px $color-footer;
+        opacity: 0.8;
+    }
+}
 
+
+
+#btn-2.a {
+    @include media-queries-max(768px) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+#btn-2.b {
+    @include media-queries-max(768px) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+#btn-2.c {
+    @include media-queries-max(768px) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.btn-2 {
+    display: flex;
+    align-items: center;
+    &__order {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $color-violet-Primaire;
+        color: $color-base;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 12px;
+    }
+    &__content {
+        background-color: $color-background-conteneurs;
+        height: 75px;
+        width: 85%;
+        border-radius: 15px;
+        box-shadow: 0 0 15px $color-shadow; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &--logo {
+            width: 22%;
+            color: $color-logos;
+            display: flex;
+            justify-content: center;
+        }
+        &--text {
+            width: 78%;
+            font-weight: bold;
+        }
+        &:hover {
+            background-color: $color-violet-hover;
+            .btn-2__content--logo {
+                color: $color-violet-Primaire;
+            }
+        }
+    }    
+}
+
+.logo-heart {
+    width: 10%;
+    display: flex;
+    &__btn {
+        font-weight: lighter;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            & .fa-heart {
+                color: $color-violet-Primaire;
+            }
+            & .logo-heart__btn--bkgd {
+                opacity: 1;
+            }
+        }
+        &--bkgd {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 500ms;
+        }
+    }
+}
 
 
 

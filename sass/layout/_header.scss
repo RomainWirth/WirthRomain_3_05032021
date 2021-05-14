@@ -1,0 +1,13 @@
+header {
+    height: 60px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 15px $color-shadow;
+}
+
+.navigation-vide {
+    width: 14px;
+}
