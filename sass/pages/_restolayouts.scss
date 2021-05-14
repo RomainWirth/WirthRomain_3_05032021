@@ -6,7 +6,7 @@
         justify-content: space-around;
         &--vide {
             width: 20%;
-            @include media-queries-max(767px) {
+            @include media-queries-max($width-smartphone) {
                 display: none;
             }            
         }
@@ -79,11 +79,11 @@
             align-items: center;
 
         }
-        @include media-queries-max(1024px) {
+        @include media-queries-max($width-medium) {
             width: 100%;
         }
     }
-    @include media-queries-max(1024px) {
+    @include media-queries-max($width-medium) {
         flex-direction: column;
     }
 }
@@ -111,7 +111,7 @@
     &:nth-child(4){animation-delay: 750ms;}
     &:hover { 
         & > .menus-content__check {
-        animation: checkbox 500ms linear both;
+        animation: checkbox 500ms ease-in forwards;
         }
         & > .menus-content__check i {
         animation: roll 500ms ease-in forwards;        

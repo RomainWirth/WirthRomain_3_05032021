@@ -20,21 +20,21 @@
 
 
 #btn-2.a {
-    @include media-queries-max(768px) {
+    @include media-queries-max($width-smartphone) {
         grid-column: 1;
         grid-row: 1;
     }
 }
 
 #btn-2.b {
-    @include media-queries-max(768px) {
+    @include media-queries-max($width-smartphone) {
         grid-column: 1;
         grid-row: 2;
     }
 }
 
 #btn-2.c {
-    @include media-queries-max(768px) {
+    @include media-queries-max($width-smartphone) {
         grid-column: 1;
         grid-row: 2;
     }

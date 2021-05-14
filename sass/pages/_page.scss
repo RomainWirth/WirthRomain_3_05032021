@@ -124,7 +124,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
             grid-gap: 20px;
-            @include media-queries-max(768px) {
+            @include media-queries-max($width-smartphone) {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(3, 1fr);
@@ -204,7 +204,7 @@
 }
 
 .rest-selec_box-sup {
-    @include media-queries-max(1024px) {
+    @include media-queries-max($width-medium) {
         display: none;
     }
 }

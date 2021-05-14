@@ -357,7 +357,7 @@ header {
 .en-tete__image--vide {
   width: 20%;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .en-tete__image--vide {
     display: none;
   }
@@ -471,7 +471,7 @@ header {
   animation-delay: 750ms;
 }
 .menus-content:hover > .menus-content__check {
-  animation: checkbox 500ms linear both;
+  animation: checkbox 500ms ease-in forwards;
 }
 .menus-content:hover > .menus-content__check i {
   animation: roll 500ms ease-in forwards;
