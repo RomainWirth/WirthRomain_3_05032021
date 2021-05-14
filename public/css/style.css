@@ -488,7 +488,7 @@ header {
 .menu__section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 30%;
 }
 .menu__section h3 {
@@ -545,6 +545,9 @@ header {
 }
 .menus-content:nth-child(3) {
   animation-delay: 500ms;
+}
+.menus-content:nth-child(4) {
+  animation-delay: 750ms;
 }
 .menus-content:hover > .menus-content__check {
   animation: checkbox 500ms linear both;
