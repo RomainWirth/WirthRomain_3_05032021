@@ -1,5 +1,5 @@
 .btn-1 {
-    background: linear-gradient(to bottom right, $color-Secondaire, $color-intermediaire) ;
+    background: linear-gradient(to bottom right, $color-Secondaire, $color-intermediaire);
     color: $color-base;
     box-shadow: 0 0 15px $color-shadow;
     font-weight: bold;
@@ -16,8 +16,6 @@
         opacity: 0.8;
     }
 }
-
-
 
 #btn-2.a {
     @include media-queries-max($width-smartphone) {
