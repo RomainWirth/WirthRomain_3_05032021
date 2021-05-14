@@ -21,7 +21,7 @@
   animation-iteration-count: 1;
 }
 .loading_page__loader {
-  padding-top: 150px;
+  padding-top: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,6 +216,7 @@ header {
 }
 .btn-1:hover {
   box-shadow: 0 0 15px #353535;
+  opacity: 0.8;
 }
 
 /* ***************** section "fonctionnement" ***************** */
@@ -374,6 +375,7 @@ header {
 }
 .restaurants-selection__box:hover {
   box-shadow: 0 0 15px #353535;
+  opacity: 0.8;
 }
 
 @media (max-width: 1024px) {
@@ -403,8 +405,8 @@ header {
   position: relative;
   z-index: 1;
 }
-.logo-heart__btn:hover i {
-  color: #9d59dc;
+.logo-heart__btn:hover .fa-heart {
+  color: #9356dc;
 }
 .logo-heart__btn:hover .logo-heart__btn--bkgd {
   opacity: 1;
