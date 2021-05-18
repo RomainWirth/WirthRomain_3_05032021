@@ -85,16 +85,10 @@
     width: 10%;
     display: flex;
     &__btn {
-        font-weight: lighter;
         position: relative;
         z-index: 1;
-        &:hover {
-            & .fa-heart {
-                color: $color-Primaire;
-            }
-            & .logo-heart__btn--bkgd {
-                opacity: 1;
-            }
+        & empty-heart {
+            font-weight: lighter;
         }
         &--bkgd {
             position: absolute;
@@ -103,8 +97,19 @@
             right: 0;
             bottom: 0;
             opacity: 0;
-            z-index: -1;
+            z-index: 2;
             transition: opacity 500ms;
+            & full-heart {
+                color: $color-Primaire;
+                display: block;
+                background-clip: text;
+                background: -webkit-linear-gradient($color-Primaire, $color-Secondaire);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }

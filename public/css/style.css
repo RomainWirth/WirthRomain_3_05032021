@@ -639,15 +639,11 @@ header {
   display: flex;
 }
 .logo-heart__btn {
-  font-weight: lighter;
   position: relative;
   z-index: 1;
 }
-.logo-heart__btn:hover .fa-heart {
-  color: #9356dc;
-}
-.logo-heart__btn:hover .logo-heart__btn--bkgd {
-  opacity: 1;
+.logo-heart__btn empty-heart {
+  font-weight: lighter;
 }
 .logo-heart__btn--bkgd {
   position: absolute;
@@ -656,8 +652,19 @@ header {
   right: 0;
   bottom: 0;
   opacity: 0;
-  z-index: -1;
+  z-index: 2;
   transition: opacity 500ms;
+}
+.logo-heart__btn--bkgd full-heart {
+  color: #9356dc;
+  display: block;
+  background-clip: text;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo-heart__btn--bkgd:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
