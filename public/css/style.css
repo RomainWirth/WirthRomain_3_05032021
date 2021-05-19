@@ -634,37 +634,19 @@ header {
   color: #9356dc;
 }
 
-.logo-heart {
-  width: 10%;
-  display: flex;
+.logo-heart__btn--full {
+  color: #fff;
+  -webkit-text-stroke: 2px #353535;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-.logo-heart__btn {
-  position: relative;
-  z-index: 1;
-}
-.logo-heart__btn empty-heart {
-  font-weight: lighter;
-}
-.logo-heart__btn--bkgd {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: 2;
-  transition: opacity 500ms;
-}
-.logo-heart__btn--bkgd full-heart {
-  color: #9356dc;
-  display: block;
+.logo-heart__btn--full:hover {
   background-clip: text;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.logo-heart__btn--bkgd:hover {
-  opacity: 1;
+  font-family: "Poppins", sans-serif;
+  -webkit-text-stroke: 2px transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

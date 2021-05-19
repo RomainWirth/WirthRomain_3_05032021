@@ -81,35 +81,20 @@
     }    
 }
 
-.logo-heart {
-    width: 10%;
-    display: flex;
-    &__btn {
-        position: relative;
-        z-index: 1;
-        & empty-heart {
-            font-weight: lighter;
+
+.logo-heart{
+    &__btn--full {
+        color: $color-base;
+        -webkit-text-stroke: 2px $color-footer;
+        font-size: 20px;
+        text-transform: uppercase;
+        &:hover {
+            background-clip: text;
+            background: linear-gradient(to bottom, $color-Primaire 0%, $color-Secondaire 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Poppins', sans-serif;
+            -webkit-text-stroke: 2px transparent;        
         }
-        &--bkgd {
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0;
-            z-index: 2;
-            transition: opacity 500ms;
-            & full-heart {
-                color: $color-Primaire;
-                display: block;
-                background-clip: text;
-                background: -webkit-linear-gradient($color-Primaire, $color-Secondaire);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
+    }    
 }
