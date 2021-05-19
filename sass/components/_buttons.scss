@@ -88,13 +88,18 @@
         -webkit-text-stroke: 2px $color-footer;
         font-size: 20px;
         text-transform: uppercase;
-        &:hover {
-            background-clip: text;
-            background: linear-gradient(to bottom, $color-Primaire 0%, $color-Secondaire 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-family: 'Poppins', sans-serif;
-            -webkit-text-stroke: 2px transparent;        
+        &:hover { animation: color 900ms ease-out forwards;
         }
     }    
+}
+
+@keyframes color {
+    100% {
+        background-clip: text;
+        background: linear-gradient(to bottom, $color-Primaire 0%, $color-Secondaire 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Poppins', sans-serif;
+        -webkit-text-stroke: 2px transparent;        
+    }
 }

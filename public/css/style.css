@@ -392,16 +392,6 @@ header {
   align-items: center;
 }
 
-@keyframes load-page {
-  0% {
-    transform: translateY(5vh);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 .menu {
   margin: 0 3.5% 20px 3.5%;
   display: flex;
@@ -524,6 +514,16 @@ header {
   align-items: center;
 }
 
+@keyframes load-page {
+  0% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @keyframes largeur {
   0% {
     width: 100%;
@@ -641,12 +641,18 @@ header {
   text-transform: uppercase;
 }
 .logo-heart__btn--full:hover {
-  background-clip: text;
-  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Poppins", sans-serif;
-  -webkit-text-stroke: 2px transparent;
+  animation: color 900ms ease-out forwards;
+}
+
+@keyframes color {
+  100% {
+    background-clip: text;
+    background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", sans-serif;
+    -webkit-text-stroke: 2px transparent;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
